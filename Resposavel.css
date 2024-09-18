@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.lora-uniquifier{
+    font-family: "Lora", system-ui;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+} 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+ 
+        background-color: transparent;
+        background-image: radial-gradient(#000000 1px, #e5e5f7 1px);
+        background-size: 30px 30px;
+        width: 100%;
+        height: 100%;
+   
+}
+
+/*HEADER*/
+/* Estilo do menu de navegação */
+nav {
+    background-color: #000000;
+    padding: 10px 0;
+    box-shadow: 0px 8px 16px 0px rgba(252, 252, 252, 0.2);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    position: relative; /* Necessário para o posicionamento do dropdown */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    display: block; /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    color: #47eaff;
+}
+
+/* Estilo do dropdown */
+nav ul li .dropdown-content {
+    display: none; /* Esconde o submenu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #000000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-width: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li {
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #000000; /* Cor de fundo ao passar o mouse sobre o submenu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+  
+
+  /* From Uiverse.io by Praashoo7 */ 
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 80px;
+    transition: .4s ease-in-out;
+    max-width: 457px; 
+    margin: 20vh auto;
+    font-size: 19px;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+   font-family: 'Times New Roman', 'Times';
+
+
+  }
+  .form a img{
+    width: 20%;
+    margin-top: 20px;
+    border-radius: 100px;
+    border: 0px;
+  }
+  
+  form:hover {
+    gap: 30px;
+    transform: scale(1.02);
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  #heading {
+    text-align: center;
+    margin: 0.4em;
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    font-family: "New Amsterdam";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .field {
+    margin: 8px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 2.0em;
+    border-radius: 25px;
+    padding: 0.2em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #202020;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    padding: 10px;
+    font-family: "New Amsterdam";
+  
+  }
+  
+  input{
+    padding: 10px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 90%;
+    color: #d3d3d3;
+    font-family: "New Amsterdam";
+    font-size: 16px;
+  }
+  
+  .nana {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+   }
+   
+   .nana:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+   @keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+   
+  .input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: white;
+  }
+  
+  .input-field {
+    font-family: "New Amsterdam";
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+  }
